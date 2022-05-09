@@ -29,7 +29,10 @@ console.log(evenNums)
 
 }
 
-const socket = [50, 23, 25, 26, 41, 60]
 
+
+const put = 500 + 500
+const socket = [50, 23, 25, 26, 41, 60,]
+socket.push(put)
 
 activeValue(socket)

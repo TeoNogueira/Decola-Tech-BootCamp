@@ -1,0 +1,1 @@
+todos os arquivos .js está sendo executado através do node, ou extensão do vscode chamada "coderunner"; por melhor desempenho e velocidade ao executar o código.

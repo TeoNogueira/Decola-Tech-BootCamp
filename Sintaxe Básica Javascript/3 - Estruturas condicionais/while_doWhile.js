@@ -14,12 +14,26 @@ let object = {
 
 }
 
-// FOR - executa uma função até que ela seja falsa
-for(let i = 0; i < array.length; i++) {
-    console.log(array[i])
+//While
 
-}
+// var disk = 0
 
-// FOR IN - executa uma repetição a partir de uma propriedade
+// while(disk<5) {
 
-// com array
+//     disk++;
+
+//     // console.log(disk)
+
+// }
+
+
+// Do While
+var disk = 0
+
+do {
+
+    disk++;
+    console.log(disk)
+
+} while (disk < 6)
+

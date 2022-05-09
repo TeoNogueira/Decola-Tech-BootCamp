@@ -25,10 +25,10 @@ for(let i = 0; i < arr.length; i++) {
     }
 
 }
+
 console.log(evenNums)
 
 }
-
 
 
 const put = 500 + 500

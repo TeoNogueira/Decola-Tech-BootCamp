@@ -86,9 +86,7 @@ calc()
         
             divReal()
         
-        
         } else if(operation == 5) {
-        
         
             divInt()
         } else if( operation == 6) {

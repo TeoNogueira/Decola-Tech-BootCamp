@@ -13,7 +13,6 @@ return a * b
 }
 
 
-
 const cb3 = (a, b) => {
 
     return a + b

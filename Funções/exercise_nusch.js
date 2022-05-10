@@ -7,6 +7,7 @@ const alunos = [
 
 //My Solution
 
+// filter + reduce + shortcircuit + Transform Values In Array
 
 const filt = alunos.filter(item => item.nota >= 5).reduce((acc, {nome}) => {
     acc[nome] = acc[nome] + 1 || 1
@@ -17,9 +18,7 @@ const filt = alunos.filter(item => item.nota >= 5).reduce((acc, {nome}) => {
 
 const transform = Object.getOwnPropertyNames(filt)
 
-console.log('Alunos Aprovados por média:\n ' + transform)
-
-
+console.log(`Alunos Aprovados por média:\n${transform.join(' | ')}`)
 
 
 //////////////////////////////////////////////////

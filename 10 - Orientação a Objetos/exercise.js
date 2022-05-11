@@ -1,11 +1,11 @@
 class BankAcc {
 
-    constructor(agency, number, type, balance) {
+    constructor(agency, number, type) {
 
         this.agency = agency;
         this.number = number;
         this.type = type;
-        this._balance = balance;
+        this._balance = 0;
     }
 
 
@@ -29,11 +29,11 @@ class BankAcc {
 }
 
 
-class CheckAcc {
+class CheckAcc extends BankAcc {
 
-    constructor(agency, number, balance, credCard) {
+    constructor(agency, number, credCard) {
 
-        super(agency, number, balance)
+        super(agency, number)
 
         this.type = 'Check Account'
         this._creditCard = credCard
@@ -55,22 +55,22 @@ class CheckAcc {
 
 
 
-class SavingsAcc {
+class SavingsAcc extends BankAcc {
 
-    constructor(agency, number, balance) {
+    constructor(agency, number) {
 
-        super(agency, number, balance)
+        super(agency, number)
         this.type = 'Savings Account'
     }
 
 }
 
 
-class UniversityAcc {
+class UniversityAcc extends BankAcc {
 
-    constructor(agency, number, balance) {
+    constructor(agency, number) {
 
-        super(agency, number, balance)
+        super(agency, number)
         this.type = 'Savings Account'
     }
 
@@ -88,6 +88,28 @@ class UniversityAcc {
 
 
 
+
+
+// const myAccount =  JSON.stringify(new CheckAcc('Bradesco', 50022322, 'Corrent'))
+
+const myAccount =  new CheckAcc('Banco do STA', 50022322, 'Corrent')
+const savingsAcc =  new CheckAcc('Banco do ITIR', 30022322, 'Corrent')
+
+savingsAcc.deposit = 509999
+
+savingsAcc.withdraw(700)
+console.log(savingsAcc)
+
+myAccount.deposit = 5000
+
+myAccount.withdraw(600)
+// console.log(myAccount)
+// console.log(myAccount.balance)
+
+
+
+
+// document.body.innerHTML = myAccount
 
 
 // const recipe = Object.getOwnPropertyNames(new BankAcc)

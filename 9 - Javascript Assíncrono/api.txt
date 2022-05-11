@@ -1,0 +1,7 @@
+API
+
+Interface de Programação de Aplicações ou Interface de Programação de Aplicação, cuja sigla API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação do software, mas apenas usar seus serviços.
+
+De modo geral, a API é composta por uma série de funções acessíveis somente por programação, e que permitem utilizar características do software menos evidentes ao utilizador tradicional. Por exemplo, um sistema operativo possui uma grande quantidade de funções na API, que permitem ao programador criar janelas, aceder a arquivos, cifrar dados etc. Mas as APIs dos sistemas operativos costumam ser dissociadas de tarefas mais essenciais, como a manipulação de blocos de memória e acesso a dispositivos. Essas tarefas são atributos do núcleo de sistema e raramente são programáveis. Outro exemplo são programas de desenho geométrico que possuem uma API específica para criar automaticamente entidades de acordo com padrões definidos pelo utilizador.
+
+Mais recentemente, o uso de API tem-se generalizado nos plugins (acessórios que complementam a funcionalidade de um programa). Os autores do programa principal fornecem uma API específica para que outros autores criem plugins, estendendo as funcionalidades do programa.

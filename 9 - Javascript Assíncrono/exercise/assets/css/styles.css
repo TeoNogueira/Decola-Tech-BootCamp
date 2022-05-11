@@ -5,16 +5,24 @@
     box-sizing: border-box;
 }
 
+body {
+
+    background: url('../image/bk.webp') repeat center;
+}
+
 :root {
 
     --c-b:  rgb(34, 31, 31);
     --c-az: #39637c;
     --c-w: #fff;
+    --c-o: #ff9c00;
+    --oc: hsl(37, 100%, 54%);
     --m-lg: 5.6rem;
     --m-md: 2.5rem;
     --m-lw: 10px;
     --f-lg: 50px;
-    --f-md: 30px;
+    --f-md: 25px;
+    --f-md2: 16px;
     --f-lw: 10px;
 }
 
@@ -23,9 +31,9 @@
     display: flex;
     margin: 0 auto;
     width: 900px;
-    height: 500px;
+    height: 600px;
     background: var(--c-az);
-    margin-top: var(--m-lg);
+    margin-top: var(--m-md);
     border-radius: 4px;
 
    
@@ -46,6 +54,7 @@ h1 {
     user-select: none;
     color: var(--c-w);
     font-size: var(--f-lg);
+    padding-bottom: 15px;
 }
 
 h1:hover {
@@ -53,3 +62,29 @@ h1:hover {
     cursor: pointer;
 }
 
+
+img {
+
+    width: 700px;
+    height: 400px;
+
+}
+
+.cat-button {
+    
+position: relative;
+border-radius: 4px;
+border: none;
+width: 140px;
+height: 40px;
+background: var(--c-o);
+color: var(--c-w);
+top: 20px;
+font-size: var(--f-md2);
+
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--oc);
+}

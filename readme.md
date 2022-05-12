@@ -37,4 +37,4 @@ click 1B "https://www.dio.me/"
 ```
 #
 
-![mthead](https://github.com/TeoNogueira/Decola-Tech-BootCamp/blob/master/GIFS/DECOLA%20TECH%20AVANADE.gif)
+![mthead](https://github.com/TeoNogueira/Decola-Tech-BootCamp/blob/react_native/gifs/MyDesign.gif)

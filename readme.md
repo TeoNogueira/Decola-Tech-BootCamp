@@ -17,7 +17,7 @@ flowchart LR;
     classDef someclass fill:#7e499e;
     
 1(AVANADE) --> 1A(AVANADE WEBSITE) 
-1(Season_01) --> 1B(DIGITAL INNOVATTION ONE) 
+1(Season_01) --> 1B(DIGITAL INNOVATION ONE) 
 A((DECOLA  TECH AVANADE 2022\n Branch Master\n )) --> 1((REACT NATIVE))
 
 

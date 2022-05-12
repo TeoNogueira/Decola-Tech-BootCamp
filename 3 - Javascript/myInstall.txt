@@ -1,1 +1,0 @@
-My extensions: github theme, Brackets Pair Colorizer 2, live server, tabnine, auto import, Code Runner, code spell checker, material icon theme.

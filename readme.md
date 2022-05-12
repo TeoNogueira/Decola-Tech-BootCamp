@@ -30,7 +30,7 @@ A((DECOLA  TECH AVANADE 2022\n Branch Master\n )) --> 1((REACT NATIVE))
 
 
 click A "https://github.com/TeoNogueira/Decola-Tech-BootCamp"
-click 1 "www."
+click 1 "https://github.com/TeoNogueira/Decola-Tech-BootCamp/tree/react_native"
 click 1A "https://www.avanade.com/pt-br"
 click 1B "https://www.dio.me/"
 

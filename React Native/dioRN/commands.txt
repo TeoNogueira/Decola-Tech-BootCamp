@@ -9,3 +9,4 @@ yarn start <<
 
 IMPORTANTE!! :::
 depois de mexer na aplicação nativa no android, re instale usando o comando : yarn android
+

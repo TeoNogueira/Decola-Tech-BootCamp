@@ -5,3 +5,7 @@ npx react-native run-android << run in android
 
 
 yarn start << 
+
+
+IMPORTANTE!! :::
+depois de mexer na aplicação nativa no android, re instale usando o comando : yarn android

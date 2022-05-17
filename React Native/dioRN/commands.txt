@@ -1,0 +1,7 @@
+npx react-native init dioRN <<< create repo
+
+npx react-native run-android << run in android
+
+
+
+yarn start << 

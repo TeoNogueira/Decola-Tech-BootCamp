@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import  {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import Torch from 'react-native-torch'
+import RNShake from 'react-native-shake'
 // import images from './assets/images/eco-light-off.png'
 
 
@@ -11,9 +13,31 @@ const App = () => {
 
   const handleChangeToggle = () => {
 
-  return setToggle(oldToggle => !oldToggle)
+  return setToggle(oldToggle => !oldToggle);
 
   }
+  // Change State | Then useEffect active
+
+  useEffect(() => {
+    // const txt = 'Atualizou o componente'
+    // Alert.alert(`${txt} ${toggle}`)
+    Torch.switchState()
+
+  }, [toggle]);
+
+useEffect(() => {
+// When the cell phone is shaken, we will change the Toggle
+
+
+  const subscription = RNShake.addListener((e) => {
+    setToggle(oldToggle => !oldToggle)
+  });
+
+// This function will be called when the component is unmounted.
+return () => subscription.remove()
+
+}, [])
+
 
   return <View style={toggle ? style.containerLight :  style.container} >
  <TouchableOpacity onPress={handleChangeToggle}>

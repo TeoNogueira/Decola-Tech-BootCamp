@@ -1,0 +1,6 @@
+./gradlew assembleRelease <<< in directory "./android"
+
+
+adb devices
+
+adb install app-release.apk

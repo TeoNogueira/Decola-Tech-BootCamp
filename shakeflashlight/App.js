@@ -11,17 +11,14 @@ const App = () => {
   // const toggle = false;
   const [toggle, setToggle] = useState(false)
 
-  const handleChangeToggle = () => {
+  const handleChangeToggle = () => setToggle(oldToggle => !oldToggle);
 
-  return setToggle(oldToggle => !oldToggle);
-
-  }
   // Change State | Then useEffect active
 
   useEffect(() => {
     // const txt = 'Atualizou o componente'
     // Alert.alert(`${txt} ${toggle}`)
-    Torch.switchState()
+    Torch.switchState(toggle)
 
   }, [toggle]);
 
@@ -29,7 +26,7 @@ useEffect(() => {
 // When the cell phone is shaken, we will change the Toggle
 
 
-  const subscription = RNShake.addListener((e) => {
+  const subscription = RNShake.addListener(() => {
     setToggle(oldToggle => !oldToggle)
   });
 
@@ -43,19 +40,20 @@ return () => subscription.remove()
  <TouchableOpacity onPress={handleChangeToggle}>
 
   <Image 
-    style={toggle ? style.lightingOff :style.lightingOn}
+    style={toggle ? style.lightingOn :style.lightingOff}
     source={
       toggle
-       ? require('./assets/images/eco-light-off.png')
-      : require('./assets/images/eco-light.png')}
+      ? require('./assets/images/eco-light.png')
+      : require('./assets/images/eco-light-off.png')}
   
   />
   <Image 
-    style={toggle ? style.lightingOff :style.lightingOn}
+    style={style.dioLogo}
     source={
       toggle
-       ? require('./assets/images/logo-dio-white.png')
-      : require('./assets/images/logo-dio.png')}
+       ? require('./assets/images/logo-dio.png')
+      : require('./assets/images/logo-dio-white.png')
+       }
   
   />
 
@@ -71,7 +69,7 @@ const style = StyleSheet.create({
   container: {
 
     flex: 1,
-    backgroundColor: 'crimson',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
 
@@ -88,7 +86,7 @@ const style = StyleSheet.create({
 
   lightingOn:{
 
-    resizeNode: 'contain',
+    resizeMode: 'contain',
     alignSelf: 'center',
     width: 150,
     height: 150,
@@ -97,7 +95,7 @@ const style = StyleSheet.create({
 
   lightingOff:{
 
-    resizeNode: 'contain',
+    resizeMode: 'contain',
     alignSelf: 'center',
     tintColor: 'white',
     width: 150,
@@ -107,9 +105,8 @@ const style = StyleSheet.create({
 
   dioLogo:{
 
-    resizeNode: 'contain',
+    resizeMode: 'contain',
     alignSelf: 'center',
-    tintColor: 'white',
     width: 250,
     height: 250,
 

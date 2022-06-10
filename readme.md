@@ -43,7 +43,13 @@ click 1B "https://www.dio.me/"
 # DIO 
 # Introdução ao React Native
 
-![image](https://github.com/TeoNogueira/Decola-Tech-BootCamp/blob/react_native/gifs/react_native.png)
+
+<div align="center" margin-right="150" >
+    <img "title="GIF_DECOLA" alt="GIF_DECOLA_TECH_FLASHLIGHT" src="https://github.com/TeoNogueira/Decola-Tech-BootCamp/blob/react_native/gifs/react_native.png">
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+  <img width="300" height="592 "title="GIF_DECOLA" alt="GIF_DECOLA_TECH_FLASHLIGHT" src="https://github.com/TeoNogueira/Decola-Tech-BootCamp/blob/react_native/gifs/FLASHLIGHT.gif">
+
+  </div>
 
 # Conteúdo
 - Conhecendo o React Native

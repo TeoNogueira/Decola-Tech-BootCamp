@@ -1,3 +1,6 @@
+install react native: npx react-native init dioRN <<< create repo
+
+
 ./gradlew assembleRelease <<< in directory "./android"
 
 

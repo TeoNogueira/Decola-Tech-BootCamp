@@ -1,0 +1,2 @@
+yarn add react-native-vector-icons
+link react-native-vector-icons

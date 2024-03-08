@@ -4,7 +4,7 @@
 
 graph LR
 
-id1>Clique Abaixo no mapa]
+id1>Clique Abaixo no mapa segurando a tecla Control]
 
 ```
   ```mermaid
